@@ -5,7 +5,7 @@
     /// <summary>
     /// Вспомогательная служба для работы с файлами.
     /// </summary>
-    public class FileService
+    public class XmlFileService
     {
         /// <summary>
         /// Получает xml документ из файла.
@@ -34,7 +34,7 @@
         }
 
         /// <summary>
-        /// Получает результаты тестов.
+        /// Получает результаты тестов из xml документа.
         /// </summary>
         /// <param name="xmlDocument">
         /// Xml документ.

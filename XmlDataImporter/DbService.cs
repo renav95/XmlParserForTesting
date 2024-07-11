@@ -101,7 +101,7 @@
 
             using (var command = new SqlCommand(selectTestIdQuery, connection))
             {
-                var insertTestResultQuery = "INSERT INTO TestResult (TestId, Duration, Result, RecorderTime) VALUES (@TestId, @Duration, @Result, @RecorderTime)";
+                var insertTestResultQuery = "INSERT INTO TestResult (TestId, Duration, Result, RecorderTime, ExecutionsNumber) VALUES (@TestId, @Duration, @Result, @RecorderTime, @ExecutionsNumber)";
                 
                 var testId = (Guid)command.ExecuteScalar();
                 
@@ -111,6 +111,7 @@
                     testResultCommand.Parameters.AddWithValue("@Duration", testData.Duration);
                     testResultCommand.Parameters.AddWithValue("@Result", testData.Result);
                     testResultCommand.Parameters.AddWithValue("@RecorderTime", DateTime.Now);
+                    testResultCommand.Parameters.AddWithValue("@ExecutionsNumber", testData.TryNumber);
 
                     testResultCommand.ExecuteNonQuery();
                 }

@@ -8,7 +8,7 @@
         /// <summary>
         /// Имя теста.
         /// </summary>
-        public string TestName { get; set; }
+        public string? TestName { get; set; }
 
         /// <summary>
         /// Длительность теста.
@@ -18,11 +18,16 @@
         /// <summary>
         /// Результат выполнения теста.
         /// </summary>
-        public string Result { get; set;}
+        public string? Result { get; set;}
 
         /// <summary>
         /// Количество попыток выполнения теста в рамках одного тестового запуска.
         /// </summary>
         public int TryNumber { get; set; }
+
+        /// <summary>
+        /// Описание.
+        /// </summary>
+        public string? Description { get; set; }
     }
 }
