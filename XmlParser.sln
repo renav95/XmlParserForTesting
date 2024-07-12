@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34622.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XmlParser", "XmlParser\XmlParser.csproj", "{B5F989FD-5516-4C1D-B36B-7B89302A08CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlDataImporter", "XmlDataImporter\XmlDataImporter.csproj", "{92D26810-7C53-4749-B3A4-9BDC67C52822}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XmlDataImporter", "XmlDataImporter\XmlDataImporter.csproj", "{92D26810-7C53-4749-B3A4-9BDC67C52822}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonMergeUtil", "JsonMergeUtil\JsonMergeUtil.csproj", "{919C8705-F649-4201-BD2E-CBA89E5EB1FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{92D26810-7C53-4749-B3A4-9BDC67C52822}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92D26810-7C53-4749-B3A4-9BDC67C52822}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92D26810-7C53-4749-B3A4-9BDC67C52822}.Release|Any CPU.Build.0 = Release|Any CPU
+		{919C8705-F649-4201-BD2E-CBA89E5EB1FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{919C8705-F649-4201-BD2E-CBA89E5EB1FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{919C8705-F649-4201-BD2E-CBA89E5EB1FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{919C8705-F649-4201-BD2E-CBA89E5EB1FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
